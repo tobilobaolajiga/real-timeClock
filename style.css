@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(to right, red,rgb(36, 35, 35));
+    font-family:Helvetica, sans-serif;
+}
+
+.clock{
+    border:30px solid black;
+    width:25rem;
+    height:25rem;
+    margin:50px auto;
+    border-radius:50%;
+    padding:2px;
+}
+.clock-face{
+    position:relative;
+    width:100%;
+    height:100%;
+    transform: translateY(-3px); /*WHAT DOES THIS DO?*/
+    
+}
+.hand {
+    width:50%;
+    height:6px;
+    background-color: white;
+    margin:10px;
+    position:absolute;
+    top:50%;
+    transform-origin:100%;
+    transform:rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.min-hour{
+    width:30rem;
+    height:10rem;
+    border:10px solid black;
+    background-color: black;
+    border-radius:20px;
+    color:white;
+    margin: 0 auto;
+    font-size:120px;
+
+}
+.actual{
+    margin:20px 80px;
+}
